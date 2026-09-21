@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: url-shortener
+  datasource:
+    url: jdbc:mysq://localhost:3306/urlshortener
+    username: root
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
