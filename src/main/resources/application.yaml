@@ -1,11 +1,19 @@
 spring:
   application:
     name: url-shortener
+
   datasource:
-    url: jdbc:mysq://localhost:3306/urlshortener
-    username: root
-    password: password
+    url: jdbc:postgresql://localhost:5432/urlshortener
+    username: rizaldydecena
+    password:
+
   jpa:
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+jwt:
+  secret: 487035abe84b117eced66405a51a30dcc954323fa570ca2576ff0a8962c6eeb9
+  expiration: 172800000
